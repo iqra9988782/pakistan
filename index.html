@@ -48,9 +48,7 @@
         }
 
         .hero-section {
-            background-image: url('https://example.com/pakistan-hero.jpg');
-            background-size: cover;
-            background-position: center;
+            background-color: #004d00;
             height: 100vh;
             display: flex;
             flex-direction: column;
@@ -96,8 +94,10 @@
             flex-wrap: wrap;
         }
 
-        .section .content img {
-            max-width: 400px;
+        .section .content .placeholder {
+            width: 400px;
+            height: 250px;
+            background-color: #e0e0e0;
             border-radius: 10px;
             margin-left: 20px;
         }
@@ -118,8 +118,10 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
 
-        .card img {
-            max-width: 100%;
+        .card .placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #e0e0e0;
             border-radius: 10px;
             margin-bottom: 20px;
         }
@@ -180,7 +182,7 @@
                 text-align: center;
             }
 
-            .section .content img {
+            .section .content .placeholder {
                 margin: 20px 0;
             }
         }
@@ -214,7 +216,7 @@
         <h2>Culture of Pakistan</h2>
         <div class="content">
             <p>Pakistan has a rich cultural heritage that dates back thousands of years...</p>
-            <img src="https://example.com/culture.jpg" alt="Culture of Pakistan">
+            <div class="placeholder"></div>
         </div>
     </section>
 
@@ -222,17 +224,17 @@
         <h2>Tourist Attractions</h2>
         <div class="cards">
             <div class="card">
-                <img src="https://example.com/northern-areas.jpg" alt="Northern Areas">
+                <div class="placeholder"></div>
                 <h3>Northern Areas</h3>
                 <p>The breathtaking landscapes of northern Pakistan...</p>
             </div>
             <div class="card">
-                <img src="https://example.com/lahore.jpg" alt="Lahore">
+                <div class="placeholder"></div>
                 <h3>Lahore</h3>
                 <p>The cultural heart of Pakistan...</p>
             </div>
             <div class="card">
-                <img src="https://example.com/karachi.jpg" alt="Karachi">
+                <div class="placeholder"></div>
                 <h3>Karachi</h3>
                 <p>The bustling metropolis by the Arabian Sea...</p>
             </div>
@@ -247,7 +249,7 @@
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <p>&copy; 2024 Explore Pakistan. All rights reserved.</p>
+        <p>&copy; 2024 Explore Pakistan. All rights reserved Created By 4 Champions.</p>
     </footer>
 
     <script>
