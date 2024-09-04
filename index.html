@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Pakistan</title>
+    <style>
+        /* Basic Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background-color: #006600;
+            padding: 10px 20px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px;
+        }
+
+        .hero-section {
+            background-image: url('https://example.com/pakistan-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section .btn {
+            padding: 10px 20px;
+            background-color: #ffffff;
+            color: #006600;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .section .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .section .content img {
+            max-width: 400px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #006600;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        footer input, footer textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        footer button {
+            padding: 10px 20px;
+            background-color: white;
+            color: #006600;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .burger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #006600;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .section .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .section .content img {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Explore Pakistan</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#tourism">Tourism</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h1>Welcome to Pakistan</h1>
+        <p>Discover the beauty and culture of Pakistan</p>
+        <a href="#culture" class="btn">Explore More</a>
+    </section>
+
+    <section id="culture" class="section">
+        <h2>Culture of Pakistan</h2>
+        <div class="content">
+            <p>Pakistan has a rich cultural heritage that dates back thousands of years...</p>
+            <img src="https://example.com/culture.jpg" alt="Culture of Pakistan">
+        </div>
+    </section>
+
+    <section id="tourism" class="section">
+        <h2>Tourist Attractions</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="https://example.com/northern-areas.jpg" alt="Northern Areas">
+                <h3>Northern Areas</h3>
+                <p>The breathtaking landscapes of northern Pakistan...</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/lahore.jpg" alt="Lahore">
+                <h3>Lahore</h3>
+                <p>The cultural heart of Pakistan...</p>
+            </div>
+            <div class="card">
+                <img src="https://example.com/karachi.jpg" alt="Karachi">
+                <h3>Karachi</h3>
+                <p>The bustling metropolis by the Arabian Sea...</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p>&copy; 2024 Explore Pakistan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Burger Menu Toggle
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        // Smooth Scroll
+        const links = document.querySelectorAll('.nav-links a');
+
+        links.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const href = this.getAttribute('href');
+                const offsetTop = document.querySelector(href).offsetTop;
+
+                scroll({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
